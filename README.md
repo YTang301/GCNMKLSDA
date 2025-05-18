@@ -13,25 +13,6 @@ This repository enables reproducible prediction of potential snoRNA–disease as
 
 GCNMKLSDA integrates similarity fusion and graph convolutional networks (GCN) to construct an effective predictor for identifying snoRNA–disease associations.
 
-This release:
-- Focuses on the **case study**;
-- Is fully executable with one command;
-- Outputs a ranked list of predicted associations for all snoRNAs vs all diseases.
-
-
-##  Folder Structure
-
-
-GCNMKLSDA
-  main.py                  # Entry script: run this file
-  predict.py               # Core prediction logic (case study)
-  Input_snoRNA.py          # Data loading
-  similarity_utility.py    # Similarity matrix integration
-  dataset                 # Processed input data (GIP, 4-mer, semantic)
-  model      # Model architecture and training logic
-
-
->  The `data` file contains all input matrices and association files used in this project.
 
 
 ##  How to Run
@@ -59,19 +40,7 @@ GCNMKLSDA
    - `case_study_result.xlsx` — includes the predicted score for each `(disease, snoRNA)` pair, with headers:
      
      Disease | snoRNA gene ID | snoRNA gene symbol | Score | Label
-   
 
-
-##  Method Summary
-
-This model consists of:
-- Multi-source similarity integration:
-  - **4-mer + GIP** for snoRNA;
-  - **semantic + GIP** for disease.
-- GCN-based embedding extraction.
-- Dual Laplacian regularized least squares prediction.
-
-This case study focuses on full prediction for all `(disease, snoRNA)` combinations based on trained embeddings and integrated similarity matrices.
 
 
 ##  Data Description
