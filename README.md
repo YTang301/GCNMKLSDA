@@ -1,9 +1,9 @@
 
-# GCNMKLSDA - Predicting snoRNA–Disease Associations Using GCN and Similarity Fusion
+# GCNMKLSDA
 
 This repository provides the implementation of the **case study** for our manuscript:
 
-> **"GCNMKLSDA: A Graph Convolutional Network Framework with Similarity Integration for Predicting snoRNA–Disease Associations"**  
+> **"A Graph Convolutional Network Framework with Similarity Integration for Predicting snoRNA–Disease Associations"**  
 > *(Submitted to Briefings in Bioinformatics, 2025)*
 
 This repository enables reproducible prediction of potential snoRNA–disease associations, and outputs all results in a structured `.xlsx` file.
