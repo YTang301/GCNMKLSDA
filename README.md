@@ -1,7 +1,7 @@
 
 # GCNMKLSDA
 
-This repository provides the implementation of the **case study** for our manuscript:
+This repository provides the implementation of our manuscript:
 
 > **"A Graph Convolutional Network Framework with Similarity Integration for Predicting snoRNA–Disease Associations"**  
 > *(Submitted to Briefings in Bioinformatics, 2025)*
@@ -25,18 +25,11 @@ GCNMKLSDA integrates similarity fusion and graph convolutional networks (GCN) to
    torch_geometric==2.5.3
 
 
-2. **Replace all data paths in `.py` files**:
-   - Modify path strings in:
-     - `main.py`
-     - `predict.py`
-     - `Input_snoRNA.py`
-
-
-3. **Run**:
+2. **Run**:
    python main.py
 
 
-4. **Output**:
+3. **Output**:
    - `case_study_result.xlsx` — includes the predicted score for each `(disease, snoRNA)` pair, with headers:
      
      Disease | snoRNA gene ID | snoRNA gene symbol | Score | Label
