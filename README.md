@@ -22,13 +22,13 @@ This release:
 ##  Folder Structure
 
 
-GCNMKLSDA/
-├── main.py                  # Entry script: run this file
-├── predict.py               # Core prediction logic (case study)
-├── Input_snoRNA.py          # Data loading
-├── similarity_utility.py    # Similarity matrix integration
-├── dataset/                 # Processed input data (GIP, 4-mer, semantic)
-└── model/      # Model architecture and training logic
+GCNMKLSDA
+  main.py                  # Entry script: run this file
+  predict.py               # Core prediction logic (case study)
+  Input_snoRNA.py          # Data loading
+  similarity_utility.py    # Similarity matrix integration
+  dataset                 # Processed input data (GIP, 4-mer, semantic)
+  model      # Model architecture and training logic
 
 
 >  The `data` file contains all input matrices and association files used in this project.
